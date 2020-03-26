@@ -1,0 +1,1 @@
+Simple MyersDiff implementation cf  https://blog.jcoglan.com/2017/02/15/the-myers-diff-algorithm-part-2/

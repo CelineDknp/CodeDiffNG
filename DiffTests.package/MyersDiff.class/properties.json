@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "CelineDeknop 3/16/2020 11:10",
+	"super" : "SimpleFileDiff",
+	"category" : "DiffTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tabA",
+		"tabB",
+		"frontier",
+		"x",
+		"y",
+		"history",
+		"insertion",
+		"deletion",
+		"keeping"
+	],
+	"name" : "MyersDiff",
+	"type" : "normal"
+}

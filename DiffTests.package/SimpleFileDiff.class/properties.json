@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "DiffTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"file1",
+		"file2"
+	],
+	"name" : "SimpleFileDiff",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Projets\CodeDiffing\CodeDiffNG\Rascal tests\.metadata\.plugins\org.eclipse.jdt.core
+2328269416.index
+789344348.index
+1405006012.index

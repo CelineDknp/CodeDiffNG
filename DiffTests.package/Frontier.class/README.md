@@ -1,0 +1,1 @@
+Helper object for Myers algo
