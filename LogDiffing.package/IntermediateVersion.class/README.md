@@ -1,0 +1,1 @@
+Concrete log object representing an indermediate version

@@ -1,0 +1,1 @@
+Object representing a log file. Will read the file and simplify/extract the important informations from the logs

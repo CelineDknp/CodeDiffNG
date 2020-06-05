@@ -1,0 +1,1 @@
+Object to abstract a log line (factory)

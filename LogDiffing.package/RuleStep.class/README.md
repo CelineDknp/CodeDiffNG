@@ -1,0 +1,1 @@
+Concrete log object representing a rule execution in the logs
