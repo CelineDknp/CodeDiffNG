@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "LogLine",
+	"category" : "LogDiffing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"number",
+		"version"
+	],
+	"name" : "IntermediateVersion",
+	"type" : "normal"
+}
