@@ -1,6 +1,6 @@
 adding
 addLink: str
-	|node restStr otherNode probability link|
+	|node restStr otherNode probability link |
 	node := self findNode: str.
 	restStr := str copyFrom: (((node index) asString) size) + 3 to: str size.
 	otherNode := self getNumberFirst: restStr.

@@ -1,6 +1,6 @@
 accessing
 createGraph
-	|allText|
+	|allText terminalNode tempIndex|
 	allText := self fileContent contents lines.
 	graph := OrderedCollection new.
 	labels := Dictionary new.
@@ -13,7 +13,10 @@ createGraph
 				 ].
 		 ] ifFalse: [ 
 			('*label="*' match: each) ifTrue:[ "We are editing the label dictionary "
-				self addLabel: each to: labels. 
+				tempIndex := self addLabel: each to: labels. 
+				(labels at: tempIndex) = 'TERMINAL' ifTrue: [ "Add terminal node first to allow links"
+					terminalNode := Node with: 'TERMINAL' index: tempIndex. 
+					self graph add: terminalNode.  ]. 
 			 ]
 		].
 	].
@@ -22,4 +25,4 @@ createGraph
 			l to: (self findNode: (l to asString )).
 		]
 	].
-	^ graph
+	^ self
