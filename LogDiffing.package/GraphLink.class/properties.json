@@ -1,15 +1,16 @@
 {
-	"commentStamp" : "CelineDknp 6/5/2020 13:25",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sourceFile",
-		"totalLines",
-		"interestLines"
+		"label",
+		"probability",
+		"from",
+		"to"
 	],
-	"name" : "LogFile",
+	"name" : "GraphLink",
 	"type" : "normal"
 }

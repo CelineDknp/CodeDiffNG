@@ -1,0 +1,4 @@
+adding
+emptyLinks
+	^ links isNil.
+	

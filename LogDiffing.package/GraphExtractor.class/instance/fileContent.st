@@ -1,0 +1,3 @@
+accessing
+fileContent
+	^ file asFileReference.

@@ -4,4 +4,4 @@ printOn: aStream
     (name := self label) ifNotNil: [ 
     ^ aStream nextPutAll: name.
 	].
-	^ aStream nextPutAll: 'Uninitialized RuleStep'
+	self storeOn: aStream
