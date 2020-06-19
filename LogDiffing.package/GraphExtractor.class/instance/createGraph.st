@@ -1,6 +1,6 @@
 accessing
 createGraph
-	|allText terminalNode tempIndex|
+	|allText tempIndex|
 	allText := self fileContent contents lines.
 	graph := OrderedCollection new.
 	labels := Dictionary new.
@@ -21,6 +21,7 @@ createGraph
 		].
 	].
 	graph do: [ :each |
+		(each label) = 'INITIAL' ifTrue:[ initialNode := each].
 		(each links) do: [ :l |
 			l to: (self findNode: (l to asString )).
 		]

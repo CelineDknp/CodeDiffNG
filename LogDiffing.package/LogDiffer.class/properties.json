@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "LogDiffing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"file1",
+		"file2",
+		"graph1",
+		"graph2",
+		"pathsG1",
+		"pathsG2",
+		"uniqueNode1",
+		"uniqueNode2",
+		"commonPath",
+		"commonNodes",
+		"addedNodes",
+		"removedNodes"
+	],
+	"name" : "LogDiffer",
+	"type" : "normal"
+}

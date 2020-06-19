@@ -8,7 +8,9 @@
 	"instvars" : [
 		"file",
 		"graph",
-		"labels"
+		"labels",
+		"initialNode",
+		"terminalNode"
 	],
 	"name" : "GraphExtractor",
 	"type" : "normal"
