@@ -1,4 +1,4 @@
-as yet unclassified
+compute
 areCommon: path1 and: path2
 	|otherNode|
 	path1 doWithIndex: [ :node :index |

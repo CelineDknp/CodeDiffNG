@@ -1,4 +1,4 @@
-as yet unclassified
+compute
 computeCommonPaths
 	|tempPaths1 tempPaths2|
 	tempPaths1 := pathsG1 copy.

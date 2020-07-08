@@ -1,16 +1,16 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "CelineDknp 7/8/2020 14:11",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"file",
 		"graph",
 		"labels",
 		"initialNode",
-		"terminalNode"
+		"terminalNode",
+		"sourceFile"
 	],
 	"name" : "GraphExtractor",
 	"type" : "normal"

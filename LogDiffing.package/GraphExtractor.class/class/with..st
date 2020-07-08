@@ -1,5 +1,5 @@
 instance creation
 with: aFile
 	^ self new
-		file: aFile;
+		sourceFile: aFile;
 		yourself

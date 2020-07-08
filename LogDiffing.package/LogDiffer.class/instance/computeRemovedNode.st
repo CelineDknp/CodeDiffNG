@@ -1,4 +1,4 @@
-as yet unclassified
+compute
 computeRemovedNode
 	|result missing|
 	result := OrderedCollection new.

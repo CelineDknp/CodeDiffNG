@@ -1,7 +1,7 @@
 extraction
 extractLog
 	| logText logInterest |
-	logText := self fileContent contents lines.
+	logText := self fileContent.
 	self totalLines: logText size.
 	"First, let's get rid of all non-important lines"
 	logInterest := logText select: [ :each | self isRelevantLog: each].

@@ -1,4 +1,4 @@
-as yet unclassified
+utility
 computeUnique
 	|allLabels result|
 	result := OrderedCollection new.

@@ -6,7 +6,8 @@ with: str
 			setUp. ]
 		ifFalse: [ 
 			('* (*) *' match: str) ifTrue: "We have an rule step"
-				[ ^ Test new
+				[ ^ RuleStep new
 				originalText: str;
 				setUp. ]
-			ifFalse: [^ str ] ]
+			ifFalse: [^ LogLine new
+					originalText:str ] ]

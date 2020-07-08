@@ -1,3 +1,3 @@
 accessing
 fileContent
-	^ file asFileReference.
+	^ (sourceFile asFileReference) contents lines.

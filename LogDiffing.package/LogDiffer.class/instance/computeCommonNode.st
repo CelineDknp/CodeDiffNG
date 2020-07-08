@@ -1,4 +1,4 @@
-as yet unclassified
+compute
 computeCommonNode
 	|result|
 	result := OrderedCollection new.

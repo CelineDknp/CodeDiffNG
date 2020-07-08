@@ -3,5 +3,5 @@ with: aNode and: anotherNode with: prob
 	^ self new 
 		from: aNode;
 		to: anotherNode;
-		probability: prob;
+		probability: prob asNumber;
 		yourself.
