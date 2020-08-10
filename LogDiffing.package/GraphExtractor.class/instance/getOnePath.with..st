@@ -1,4 +1,4 @@
-utility
+utilities
 getOnePath: currentPath with: allPaths
 	|currentNode copyPath|
 	currentNode := currentPath last.
@@ -15,4 +15,4 @@ getOnePath: currentPath with: allPaths
 				self getOnePath: copyPath with: allPaths. 
 			].
 		].
-	]
+	].

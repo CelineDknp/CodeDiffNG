@@ -1,6 +1,6 @@
 instance creation
-with: str 
+with: aString
 	^ self new
-	label: str;
+	label: aString;
 	setUp;
 	yourself

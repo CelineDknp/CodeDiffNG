@@ -1,6 +1,3 @@
 extraction
 fullFileCreation
-	|logs|
-	logs := self extractLog.
-	(self sourceFile, 'cleaned.txt') asFileReference writeStreamDo: [ :stream |
-    logs do: [ :each | each printOn: stream. stream nextPutAll: ''; cr.] ].
+	self fullFileCreation: (sourceFile copyFrom: 1 to: (sourceFile size) - 7 ).

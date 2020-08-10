@@ -1,0 +1,3 @@
+accessing
+dirOutput
+	^ dirOutput.

@@ -1,3 +1,3 @@
 accessing
-to: value
-	to := value.
+to: aValue
+	to := aValue.

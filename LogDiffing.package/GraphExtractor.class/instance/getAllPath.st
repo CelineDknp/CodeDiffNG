@@ -1,4 +1,4 @@
-utility
+utilities
 getAllPath
 	|paths|
 	paths := OrderedCollection new.

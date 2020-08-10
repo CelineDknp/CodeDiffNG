@@ -1,7 +1,7 @@
 accessing
 createGraph
 	|allText tempIndex|
-	allText := self fileContent contents lines.
+	allText := self fileContent contents.
 	graph := OrderedCollection new.
 	labels := Dictionary new.
 	allText do: [ :each |

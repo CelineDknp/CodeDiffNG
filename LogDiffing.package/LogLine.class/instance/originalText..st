@@ -1,3 +1,3 @@
 accessing
-originalText: str
-	originalText := str.
+originalText: aString
+	originalText := aString.

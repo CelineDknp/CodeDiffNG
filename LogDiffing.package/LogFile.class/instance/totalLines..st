@@ -1,3 +1,3 @@
 accessing
-totalLines: value
-totalLines := value.
+totalLines: aValue
+	totalLines := aValue.

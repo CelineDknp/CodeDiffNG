@@ -1,5 +1,5 @@
-utility
-stripString: str
-	^ self stripString: str of: Character space.
+utilities
+stripString: aString
+	^ self stripString: aString of: Character space.
 	
 	

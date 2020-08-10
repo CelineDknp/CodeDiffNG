@@ -1,3 +1,3 @@
 accessing
-interestLines: value
-interestLines := value.
+interestLines: aValue
+interestLines := aValue.

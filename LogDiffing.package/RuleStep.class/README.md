@@ -10,4 +10,4 @@ Instance variables:
 Methods:
 - `setUp`: Initialize the instance variables
 - `printOn: aStream` prints simply the value of `label` on the stream
-- `splitLine: astring` splits the original log line to extract all the variables (used by `setUp`)
+- `splitLine: aLog` splits the original log line to extract all the variables (used by `setUp`)

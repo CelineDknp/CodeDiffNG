@@ -1,10 +1,12 @@
 extraction
 extractLog
-	| logText logInterest |
+	| logText logInterest temp|
 	logText := self fileContent.
 	self totalLines: logText size.
 	"First, let's get rid of all non-important lines"
 	logInterest := logText select: [ :each | self isRelevantLog: each].
-	self interestLines: logInterest size.
 	"Then create and return all log objects"
-	^ logInterest collect: [ :each | LogLine with: each ].
+	allLogs := logInterest collect: [ :each | LogLine with: each ].
+	temp := allLogs select: [ : each | (each isMemberOf: IntermediateVersion) or: (each changedCode) ].
+	self interestLines: temp size.
+	^ temp.

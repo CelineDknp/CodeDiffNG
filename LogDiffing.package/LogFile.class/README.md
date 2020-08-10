@@ -6,6 +6,7 @@ Local vars:
 - totalLine (when `extractLog` was run, total lines in original file)
 - interestLines (when `extractLog` was run, total extraced lines)
 - allPart (when `multipleFileCreation` was run, contains a dict with all parts and their lines)
+- allLogs
 
 Methods:
 - `fileContent`: returns the String content of full `sourceFile` file

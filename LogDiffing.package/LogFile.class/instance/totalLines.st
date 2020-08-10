@@ -1,3 +1,3 @@
 accessing
 totalLines
-^totalLines
+	^ totalLines.

@@ -1,7 +1,7 @@
 instance creation
-with: str index: int
+with: aString index: anIndex
 	^ self new
-	label: str;
+	label: aString;
 	setUp;
-	index: int;
+	index: anIndex;
 	yourself

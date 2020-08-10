@@ -1,0 +1,3 @@
+adding
+last 
+	^ allIndexes last

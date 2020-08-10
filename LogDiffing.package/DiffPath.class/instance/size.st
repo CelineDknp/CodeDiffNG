@@ -1,0 +1,3 @@
+adding
+size
+	^ allIndexes size

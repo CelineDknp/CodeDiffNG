@@ -1,15 +1,15 @@
-utility
-extractStrBetween: char from: str
+utilities
+extractStrBetween: char from: aString
 	| start result |
 	start := false.
 	result := ''.
-	(1 to: (str size)) do: [ :index | 
+	(1 to: (aString size)) do: [ :index | 
 		start ifTrue: [ "We are extracting"
-			(str at: index) = char ifTrue: [ ^ result ]
-			ifFalse: [ result := result,((str at:index) asString)] 
+			(aString at: index) = char ifTrue: [ ^ result ]
+			ifFalse: [ result := result,((aString at:index) asString)] 
 		]
 		ifFalse: [ 
-			(str at: index) = char ifTrue: [ start := true ]
+			(aString at: index) = char ifTrue: [ start := true ]
 		].
 	].
 	^ result.

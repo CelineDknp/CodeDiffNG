@@ -1,8 +1,8 @@
 adding
-addLink: str
+addLink: aString
 	|node restStr otherNode probability link |
-	node := self findNode: str.
-	restStr := str copyFrom: (((node index) asString) size) + 3 to: str size.
+	node := self findNode: aString.
+	restStr := aString copyFrom: (((node index) asString) size) + 3 to: aString size.
 	otherNode := self getNumberFirst: restStr.
 	probability := self extractStrBetween: $" from: restStr.
 	link := GraphLink with: node and: otherNode with: (probability copyFrom: 4 to: probability size) .

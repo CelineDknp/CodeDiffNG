@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "CelineDknp 7/10/2020 15:22",
+	"super" : "Object",
+	"category" : "LogDiffing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileV1",
+		"fileV2",
+		"logFileV1",
+		"logFileV2"
+	],
+	"name" : "FileProcessor",
+	"type" : "normal"
+}

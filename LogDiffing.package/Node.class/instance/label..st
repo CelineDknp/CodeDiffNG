@@ -1,3 +1,3 @@
 accessing
-label: value 
-	label := value
+label: aValue 
+	label := aValue.

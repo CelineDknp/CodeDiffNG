@@ -1,8 +1,7 @@
-utility
+utilities
 computeUnique
 	|allLabels result|
-	result := OrderedCollection new.
-	allLabels := Set new.
+	result := OrderedCollection new. allLabels := Set new.
 	graph do: [ :node |
 		(allLabels includes: (node label)) ifTrue:[
 				result do: [ :each | (node label = each label) ifTrue: [ result remove: each]. ]

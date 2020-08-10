@@ -1,3 +1,3 @@
 accessing
-probability: value
-	probability := value.
+probability: aValue
+	probability := aValue.

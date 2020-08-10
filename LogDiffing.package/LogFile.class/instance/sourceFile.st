@@ -1,3 +1,3 @@
 accessing
 sourceFile
-	^ sourceFile
+	^ sourceFile.
