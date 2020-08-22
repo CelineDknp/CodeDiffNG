@@ -6,3 +6,4 @@ newLink := GraphLinkDiff with: nodeFrom and: nodeTo with: newProbability. "creat
 newLink status: status.
 newLink label: newProbability.
 nodeFrom addLink: newLink.
+^ newLink.
