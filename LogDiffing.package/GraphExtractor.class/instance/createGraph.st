@@ -4,6 +4,7 @@ createGraph
 	allText := self fileContent contents.
 	graph := OrderedCollection new.
 	labels := Dictionary new.
+	links := OrderedCollection new.
 	allText do: [ :each |
 		('*->*' match: each) ifTrue: [ "We are adding a node to the graph "
 			(self nodeExists: each) ifTrue:[

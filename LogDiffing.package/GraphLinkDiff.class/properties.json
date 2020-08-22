@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "GraphLink",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"allIndexes",
-		"allNodes"
+		"status"
 	],
-	"name" : "DiffPath",
+	"name" : "GraphLinkDiff",
 	"type" : "normal"
 }

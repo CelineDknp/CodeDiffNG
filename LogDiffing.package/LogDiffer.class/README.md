@@ -1,6 +1,9 @@
 LogDiffer object (will abstract the pipeline)
 
-Constructor: LogDiffer with: aFileV1 and: aFileV2
+Constructor: 
+ - LogDiffer with: aFileV1 and: aFileV2 (run with no cycle no pruning)
+ - LogDiffer with: aFileV1 and: aFileV2 cycles: maxCyclesNumber (run with cycles up to max no pruning)
+ - LogDiffer with: aFileV1 and: aFileV2 cycles: maxCyclesNumber heuristic: startSize and: minEdit (run with cycles up to max pruning from startSize with a minimum edit of minEdit)
 
 Instance variables: 
 - file1: String name of v1 of file 
@@ -21,5 +24,5 @@ Methods:
 - `computeAddedNode`: loops trough all nodes and finds the added ones (fills variable addedNodes) 
 - `computeCommonNode`: loops trough all nodes and finds the common ones (fills variable commonNodes) 
 - `computeRemovedNode`: loops trough all nodes and finds the removed ones (fills variable removedNodes) 
-- `computesCommonPaths`: loops through all paths to compute the common ones (fills variable commonPaths) Uses: 
+- `computesCommonPaths`: loops through all paths to compute the common ones (fills variable commonPaths) ! should be ran first ! Uses: 
 	- `areCommon: aPath and: anotherPath`: returns true if both paths are the same.

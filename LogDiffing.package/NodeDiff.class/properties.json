@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "CelineDknp 8/21/2020 16:07",
+	"super" : "Node",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"allIndexes",
-		"allNodes"
+		"status",
+		"graphFrom"
 	],
-	"name" : "DiffPath",
+	"name" : "NodeDiff",
 	"type" : "normal"
 }

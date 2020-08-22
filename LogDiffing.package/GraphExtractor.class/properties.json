@@ -9,6 +9,7 @@
 		"sourceFile",
 		"graph",
 		"labels",
+		"links",
 		"initialNode",
 		"terminalNode"
 	],

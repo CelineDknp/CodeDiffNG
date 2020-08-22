@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "CelineDknp 7/8/2020 16:04",
+	"commentStamp" : "CelineDknp 8/21/2020 15:25",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
@@ -10,6 +10,7 @@
 		"file2",
 		"graph1",
 		"graph2",
+		"graphDiff",
 		"pathsG1",
 		"pathsG2",
 		"uniqueNode1",
