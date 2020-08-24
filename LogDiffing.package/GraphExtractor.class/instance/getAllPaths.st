@@ -1,4 +1,4 @@
-utilities
+heuristic
 getAllPaths
 	|paths|
 	paths := OrderedCollection new.

@@ -1,4 +1,4 @@
-utilities
+heuristic
 getAllPathsWithCycles: cycles
 	|paths|
 	paths := OrderedCollection new.

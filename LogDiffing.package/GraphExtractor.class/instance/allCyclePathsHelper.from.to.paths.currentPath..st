@@ -1,4 +1,4 @@
-as yet unclassified
+heuristic
 allCyclePathsHelper: maxCycles from: nodeFrom to: nodeTo paths: allPaths currentPath: currentPath
 	| nextPath nextNode|
 	nodeFrom = nodeTo ifTrue: [ allPaths add: currentPath. ] "We are done with this path"

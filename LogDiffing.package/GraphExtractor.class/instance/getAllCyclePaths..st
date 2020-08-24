@@ -1,4 +1,4 @@
-as yet unclassified
+heuristic
 getAllCyclePaths: maxCycles
 	| allPaths |
 	allPaths := OrderedCollection new.

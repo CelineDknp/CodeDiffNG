@@ -18,11 +18,20 @@ Instance variables:
 - commonNodes: Nodes in common between graph1 and graph2 
 - addedNodes: Nodes not in graph1 but in graph2 
 - removedNodes: Nodes in graph1 but not in graph2
+- graphDiff: GraphDiff object contining the result of the diff of `graph1` and `graph2`
 
 Methods: 
-- `setUp`: instantiate variables graph1/2, pathsG1/2, uniqueNodeG1/2 and commonNode (empty array) 
-- `computeAddedNode`: loops trough all nodes and finds the added ones (fills variable addedNodes) 
-- `computeCommonNode`: loops trough all nodes and finds the common ones (fills variable commonNodes) 
-- `computeRemovedNode`: loops trough all nodes and finds the removed ones (fills variable removedNodes) 
-- `computesCommonPaths`: loops through all paths to compute the common ones (fills variable commonPaths) ! should be ran first ! Uses: 
-	- `areCommon: aPath and: anotherPath`: returns true if both paths are the same.
+- `setUp(: cycles (withHeuristic: heuristic and: minEdit))`: instantiate variables graph1/2, pathsG1/2 (with no cycles, with `cycles`, by pruning with `heuristic`), uniqueNodeG1/2 and commonNode (empty array) 
+- `computeAll`: computes all necessary infos for creating the diff graph (in the right order) Uses:
+	- `computesCommonPaths`: loops through all paths to compute the common ones (fills variable commonPaths) ! should be ran first ! Uses: 
+		- `areCommon: aPath and: anotherPath`: returns true if both paths are the same.
+	- `computeAddedNode`: loops trough all nodes and finds the added ones (fills variable addedNodes) 
+	- `computeCommonNode`: loops trough all nodes and finds the common ones (fills variable commonNodes) 
+	- `computeRemovedNode`: loops trough all nodes and finds the removed ones (fills variable removedNodes) 
+- `createGraphDiff(AndExport)`: constructs the diff in `graphDiff` (and exports it to a .dot file). Uses:
+	- `commonEquivalent: aNode`: returns the common node equivalent to specified node (of either gaph1 or graph2).
+	- `addedEquivalent: aNode`: returns the added node equivalent to specified node (of either gaph1 or graph2)
+	- `removedEquivalent: aNode`: returns the removed node equivalent to specified node (of either gaph1 or graph2)
+	- `commonInclude: allValues withArray: anArray` ?
+	- `IsIn: anArray node: aNode`: returns true if `aNode` is in `anArray` (violent include override. Maybe override equals ?)
+	

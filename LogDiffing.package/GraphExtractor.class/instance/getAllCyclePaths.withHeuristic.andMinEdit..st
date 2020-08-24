@@ -1,4 +1,4 @@
-as yet unclassified
+heuristic
 getAllCyclePaths: maxCycles withHeuristic: startingSize andMinEdit: editSize
 	| allPaths basePaths|
 	basePaths := OrderedCollection new.

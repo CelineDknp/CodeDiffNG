@@ -1,4 +1,4 @@
-utilities
+heuristic
 getAllPathsWithCycles: cycles andHeuristic: heuristic with: minEdits
 	|paths|
 	paths := OrderedCollection new.
