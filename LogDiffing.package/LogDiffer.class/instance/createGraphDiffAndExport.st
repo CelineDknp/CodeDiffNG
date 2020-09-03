@@ -1,4 +1,4 @@
-as yet unclassified
+compute
 createGraphDiffAndExport
 	self createGraphDiff.
 	graphDiff extractToFile.

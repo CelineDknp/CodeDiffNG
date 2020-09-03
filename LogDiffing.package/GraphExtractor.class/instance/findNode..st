@@ -1,5 +1,6 @@
 adding
 findNode: str
-	|index|
+	|index result|
 	index := self getNumberFirst: str.
-	self graph do: [ :each | (each index = index) ifTrue: [ ^ each ] ].
+	result := self graph select:[ :each | (each index = index)].
+	result ifNotNil: [ ^ (result first) ] ifNil: [ ^ nil ].

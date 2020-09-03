@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "CelineDknp 8/23/2020 15:15",
+	"commentStamp" : "CelineDknp 8/24/2020 15:53",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"allIndexes",
-		"allNodes"
+		"allNodes",
+		"mapFirstOccurence"
 	],
 	"name" : "DiffPath",
 	"type" : "normal"

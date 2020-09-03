@@ -1,4 +1,4 @@
-as yet unclassified
+heuristic
 levenshteinDistanceWith: otherPath 
 	
 	"Iterative calculation of the Levenshtein distance between two strings. found at : https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Smalltalk then modified a bit"

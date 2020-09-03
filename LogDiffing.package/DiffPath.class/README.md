@@ -1,7 +1,6 @@
 Object encompassing a path within a graph. Essentially a wrapper around an array allowing to calculate the levenshtein distance used in the heuristic
 Constructor:
 - DiffPath with: aNode
-- DiffPath with: anArray (containing only the nodes indexes)
 - DiffPath with: anArray andArray: anotherArray (anArray with the node indexes, anotherArray with the nodes) 
 
 
@@ -12,7 +11,6 @@ Instances variables:
 
 Methods:
 - `add: aNode`: Add `aNode` to the paths (in both arrays)
-- `addArray: anArray`: The array of node indexes `anArray` is copied into the variable `allIndexes` (depreciated ?)
 - `addArray: anArray andArray:anotherArray`: copies `anArray` into `allIndexes` and `anotherArray` into `allNodes`
 - `at: anIndex`: returns the index value (from `allIndexes`) at `anIndex`
 - `copy`: performs a deep copy of this object

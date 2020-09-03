@@ -1,4 +1,4 @@
-as yet unclassified
+subclass creation
 create: status between: nodeFrom and: nodeTo
 |newLink newProbability|
 newProbability := self computeNewProbability: (nodeFrom graphFrom) with: (nodeTo graphFrom) status: status."Compute the probability"

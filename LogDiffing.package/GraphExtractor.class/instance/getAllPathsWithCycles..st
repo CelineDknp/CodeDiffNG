@@ -2,5 +2,5 @@ heuristic
 getAllPathsWithCycles: cycles
 	|paths|
 	paths := OrderedCollection new.
-	paths := self getAllCyclePaths: cycles.
+	self allCyclePathsHelper: cycles from: initialNode to: terminalNode paths: paths currentPath: (DiffPath with: initialNode).
 	^ paths.

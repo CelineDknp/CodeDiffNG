@@ -1,4 +1,4 @@
-as yet unclassified
+fileExtraction
 extractToFile
 
 	(self targetFile) asFileReference writeStreamDo: [ :stream |

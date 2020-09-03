@@ -1,4 +1,5 @@
-as yet unclassified
+compute
 commonEquivalent: node
-	commonNodes do: [ :each | (((each graphFromAt: 1) = node) or: ((each graphFromAt: 2) = node)) ifTrue: [ ^ each ]. ].
-	^ nil.
+	|result|
+	result := commonNodes select: [ :each | ((each graphFromAt: 1) = node) or: ((each graphFromAt: 2) = node)].
+	result ifNotNil: [^(result first)] ifNil: [^nil].

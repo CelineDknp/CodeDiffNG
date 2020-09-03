@@ -1,28 +1,24 @@
-as yet unclassified
+subclass creation
 computeNewProbability: nodeFrom with: nodeTo status: status
 	|v1From v1To v2From v2To v1Link v2Link|
-	(status = 'common') ifTrue: [ 
+	
+	(nodeFrom isArray) ifTrue:[ "Get V1/V2 infos from node from"
 		v1From := (nodeFrom at: 1).
 		v2From := (nodeFrom at: 2).
+	] ifFalse: [ 
+		(status = 'added') ifTrue: [ v2From := nodeFrom.] ifFalse: [ 	v1From := nodeFrom.].
+	].
+	(nodeTo isArray) ifTrue:[ "Get V1/V2 infos from node to"
 		v1To := (nodeTo at: 1).
 		v2To := (nodeTo at: 2).
-		(nodeFrom at: 1) links do:[:each | (((each to) = v1To) and: (each from) = v1From) ifTrue: [ v1Link := each. Break.].].
-		(nodeFrom at: 2) links do:[:each | (((each to) = v2To) and: (each from) = v2From) ifTrue: [ v2Link := each. Break.].].
-		^ ((v1Link probability) asString, '->', (v2Link probability) asString).
-		].
-	(status = 'added') ifTrue: [ 
-		(nodeFrom isArray) ifTrue: [ (nodeFrom at:2) links do:[:each | (((each to) = nodeTo ) and: (each from) = (nodeFrom at:2)) ifTrue: [ v1Link := each. Break.].]. ]
-		ifFalse:[
-			(nodeTo isArray) ifTrue: [ nodeFrom links do:[:each | (((each to) = (nodeTo at:2) ) and: (each from) = nodeFrom) ifTrue: [ v1Link := each. Break.].]. ] 
-			ifFalse: [ nodeFrom links do:[:each | (((each to) = nodeTo ) and: (each from) = nodeFrom) ifTrue: [ v1Link := each. Break.].]. ]].
-		^ ('0->', (v1Link probability) asString).
-		].
-	(status = 'removed') ifTrue: [
-		(nodeFrom isArray) ifTrue: [ (nodeFrom at:1) links do:[:each | (((each to) = nodeTo ) and: (each from) = (nodeFrom at:1)) ifTrue: [ v1Link := each. Break.].]. ]
-		ifFalse:[
-			(nodeTo isArray) ifTrue: [ nodeFrom links do:[:each | (((each to) = (nodeTo at:1) ) and: (each from) = nodeFrom) ifTrue: [ v1Link := each. Break.].]. ] 
-			ifFalse: [ nodeFrom links do:[:each | (((each to) = nodeTo ) and: (each from) = nodeFrom) ifTrue: [ v1Link := each. Break.].]. ]].
-		^ ((v1Link probability) asString,'->0').
-		].
+	] ifFalse: [ 
+		(status = 'added') ifTrue: [ v2To:= nodeTo.	] ifFalse: [ v1To:= nodeTo.	].
+	].
+	v1From ifNotNil: [ "Get V1 link if needed"
+		v1From links do:[:each | ((each to) = v1To) ifTrue: [ v1Link := each. ].].
+	].
+	v2From ifNotNil: [ "Get V2 link if needed"
+		v2From links do:[:each | ((each to) = v2To) ifTrue: [ v2Link := each. ].].
+	].
+	^ (v1Link ifNotNil: [v1Link probability] ifNil: [0])asString,'->', (v2Link ifNotNil: [v2Link probability] ifNil: [0])asString
 	
-	^ 0

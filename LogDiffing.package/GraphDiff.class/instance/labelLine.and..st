@@ -1,4 +1,4 @@
-accessing
+printing
 labelLine: aKey and: aLabel
 	| result |
 	result := '  ' , (aKey asString) , ' [label="' , aLabel , '"'.

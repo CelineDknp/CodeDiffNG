@@ -26,9 +26,7 @@ Methods:
 (From no on, all methods are used to get the path within the graph, with or without heuristic)
 - `getAllPaths`: computes all paths in the graph (no cycles), utilitary method for the differ. (Lauches getAllPathsWithCycles: 0)
 - `getAllPathsWithCycles: aNumber`: computes all paths with a maximum cycle of `aNumber` Uses:
-	- `getAllCyclePaths: aNumber`. Simply launches "allCyclePathsHelper" (could be refactored). Uses:
-		- `allCyclePathsHelper: maxCycles from: nodeFrom to: nodeTo paths: allPaths currentPath: currentPath`: simple cycle-path creating algo, without heuristic. Uses:
-			- `isValid: currentPath withNext: nextNode withCycles: maxCycles`: returns true if `currentPath` doesn't exceed `maxCycle` when node `nextNode` is added
-- `getAllPathsWithCycles: cycles andHeuristic: heuristic with: minEdits`: computes all paths with max `cycles` and according to heuristic. Uses:
-	- `getAllCyclePaths: maxCycles withHeuristic: startingSize andMinEdit: editSize` launches paths without cycles then heuristic (could be refactored ?) Uses:
-		- `allCyclePathsHeuristicHelper: maxCycles pruneSize: startingSize andMinEdit: editSize basePaths: basePaths from: nodeFrom to: nodeTo paths: allPaths currentPath: currentPath diffEnough: diffEnough`
+	- `allCyclePathsHelper: maxCycles from: nodeFrom to: nodeTo paths: allPaths currentPath: currentPath`: simple cycle-path creating algo, without heuristic. Uses:
+		- `isValid: currentPath withNext: nextNode withCycles: maxCycles`: returns true if `currentPath` doesn't exceed `maxCycle` when node `nextNode` is added
+- `getAllPathsWithCycles: cycles andHeuristic: heuristic with: minEdits`: computes all paths with max `cycles` and according to heuristic.  Uses:
+	- `allCyclePathsHeuristicHelper: maxCycles pruneSize: startingSize andMinEdit: editSize basePaths: basePaths from: nodeFrom to: nodeTo paths: allPaths currentPath: currentPath diffEnough: diffEnough`

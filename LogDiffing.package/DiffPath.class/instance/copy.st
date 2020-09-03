@@ -1,3 +1,3 @@
 copying
 copy
-	^DiffPath withArray: allIndexes andArray: allNodes.
+	^DiffPath withArray: allIndexes andArray: allNodes withMap: mapFirstOccurence.
