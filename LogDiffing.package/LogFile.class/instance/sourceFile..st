@@ -1,3 +1,3 @@
 accessing
 sourceFile: aString 
-	sourceFile := aString.
+	sourceFile := aString asFileReference.

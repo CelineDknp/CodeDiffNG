@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 fuseMirrorLinks: aNode
 	| linkArray newLink oldLinks|
 	oldLinks := aNode links.

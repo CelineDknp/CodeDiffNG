@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 postProcessBottomUp: aNode nodeList: allProcessedNodes fused: fusedBool
 	|allNodesLinked allLinksFrom fusedThisRound|
 	allNodesLinked := OrderedCollection new.

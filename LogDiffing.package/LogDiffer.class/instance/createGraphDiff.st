@@ -8,12 +8,16 @@ createGraphDiff
 	graphDiff links: OrderedCollection new.
 	commonNodes do: [ :each | graphDiff addNode: each]. "First, add all the common nodes"
 	graph2 graph do:[ :nodeG2 | "Add nodes from G2, that are added"
-		(self isIn:commonNodes node: nodeG2) ifFalse: [ |tempNode| tempNode := (nodeG2 create: 'added' withGraph: nodeG2). graphDiff addNode: tempNode. equivalentG2 at: nodeG2 put: tempNode.]
-		ifTrue: [ equivalentG2 at: nodeG2 put: (self commonEquivalent: nodeG2). ].
+		|tempCommon|
+		tempCommon := self commonEquivalent: nodeG2.
+		(tempCommon) ifNil:[ |tempNode| tempNode := (nodeG2 create: 'added' withGraph: nodeG2). graphDiff addNode: tempNode. equivalentG2 at: nodeG2 put: tempNode.]
+		ifNotNil: [ equivalentG2 at: nodeG2 put: tempCommon. ].
 	].
 	graph1 graph do:[ :nodeG1 | "Add nodes from G1, that are removed"
-		(self isIn:commonNodes node: nodeG1) ifFalse:[ |tempNode| tempNode := (nodeG1 create: 'removed' withGraph: nodeG1). graphDiff addNode: tempNode. equivalentG1 at: nodeG1 put: tempNode. ]
-		ifTrue: [ equivalentG1 at: nodeG1 put: (self commonEquivalent: nodeG1). ].
+		|tempCommon|
+		tempCommon := self commonEquivalent: nodeG1.
+		(tempCommon) ifNil:[ |tempNode| tempNode := (nodeG1 create: 'removed' withGraph: nodeG1). graphDiff addNode: tempNode. equivalentG1 at: nodeG1 put: tempNode. ]
+		ifNotNil: [ equivalentG1 at: nodeG1 put: tempCommon. ].
 	].
 	
 	graph1 links do: [ :linkG1 | "Add all liks from G1 as if they are removed"

@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 fuseMirrorNodes: aNode with:mirrorArray
 	|child1 child2 newChild|
 	child1 := mirrorArray at:1.

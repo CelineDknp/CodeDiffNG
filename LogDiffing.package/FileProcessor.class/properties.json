@@ -9,7 +9,8 @@
 		"fileV1",
 		"fileV2",
 		"logFileV1",
-		"logFileV2"
+		"logFileV2",
+		"outputFiles"
 	],
 	"name" : "FileProcessor",
 	"type" : "normal"

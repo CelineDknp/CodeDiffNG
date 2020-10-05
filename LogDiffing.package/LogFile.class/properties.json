@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "CelineDknp 7/28/2020 16:41",
+	"commentStamp" : "CelineDknp 9/11/2020 15:55",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
@@ -11,7 +11,8 @@
 		"totalLines",
 		"interestLines",
 		"dirOutput",
-		"allLogs"
+		"allLogs",
+		"versionNumber"
 	],
 	"name" : "LogFile",
 	"type" : "normal"

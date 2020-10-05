@@ -1,12 +1,14 @@
 {
-	"commentStamp" : "CelineDknp 8/24/2020 09:27",
+	"commentStamp" : "CelineDknp 9/3/2020 15:11",
 	"super" : "GraphLink",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"status"
+		"status",
+		"probabilityBefore",
+		"probabilityAfter"
 	],
 	"name" : "GraphLinkDiff",
 	"type" : "normal"

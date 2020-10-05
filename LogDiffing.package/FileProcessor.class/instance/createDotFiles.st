@@ -1,6 +1,7 @@
 fileCreation
 createDotFiles
 	|allFiles currentFile|
+	outputFiles := OrderedCollection new.
 	allFiles := (FileSystem disk workingDirectory / (logFileV1 dirOutput)) allChildren.
 	allFiles do: [ :file |
 		file isFile ifTrue: [ 

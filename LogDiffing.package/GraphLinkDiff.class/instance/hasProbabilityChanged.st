@@ -1,0 +1,3 @@
+testing
+hasProbabilityChanged
+	^ probabilityBefore ~= probabilityAfter

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "CelineDknp 10/5/2020 11:10",
+	"super" : "Object",
+	"category" : "LogDiffing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"differ",
+		"nodeModel",
+		"canvas",
+		"verticalSpacing",
+		"horizontalSpacing",
+		"layout"
+	],
+	"name" : "DiffDrawer",
+	"type" : "normal"
+}

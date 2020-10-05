@@ -20,5 +20,5 @@ computeNewProbability: nodeFrom with: nodeTo status: status
 	v2From ifNotNil: [ "Get V2 link if needed"
 		v2From links do:[:each | ((each to) = v2To) ifTrue: [ v2Link := each. ].].
 	].
-	^ (v1Link ifNotNil: [v1Link probability] ifNil: [0])asString,'->', (v2Link ifNotNil: [v2Link probability] ifNil: [0])asString
+	^ Array with:(v1Link ifNotNil: [v1Link probability] ifNil: [0]) with:(v2Link ifNotNil: [v2Link probability] ifNil: [0])
 	

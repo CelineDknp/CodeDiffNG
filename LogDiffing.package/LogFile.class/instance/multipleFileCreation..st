@@ -8,7 +8,7 @@ multipleFileCreation: directoryName
 	logs
 		do: [ :aLog | 
 			aLog isMajorVersion
-				ifTrue: [ filename := directoryName,'/',self sourceFile , aLog version , 'cleaned.txt'.
+				ifTrue: [ filename := directoryName,'/',(self sourceFile base), (self versionNumber) , aLog version , 'cleaned.txt'.
 					currentTab := OrderedCollection with: aLog.
 					allParts at: filename put: currentTab ]
 				ifFalse: [ currentTab isNotNil

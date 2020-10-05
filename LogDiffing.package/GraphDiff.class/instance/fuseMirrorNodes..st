@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 fuseMirrorNodes: aNode
 	|mirrorArray|
 	mirrorArray := aNode getMirrorChildren.

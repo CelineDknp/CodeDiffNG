@@ -1,3 +1,3 @@
 accessing
 label
-	^ label
+	^ (probabilityBefore asString),'->',(probabilityAfter asString)
