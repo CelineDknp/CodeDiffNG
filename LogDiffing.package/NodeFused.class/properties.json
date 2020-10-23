@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "CelineDknp 10/23/2020 13:11",
+	"super" : "Node",
+	"category" : "LogDiffing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nodeContained",
+		"initialLinks"
+	],
+	"name" : "NodeFused",
+	"type" : "normal"
+}

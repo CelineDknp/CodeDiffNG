@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "CelineDknp 10/23/2020 12:56",
+	"commentStamp" : "CelineDknp 10/23/2020 13:06",
 	"super" : "GraphExtractor",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nextIndex",
-		"targetFile"
+		"initialGraph",
+		"fused"
 	],
-	"name" : "GraphDiff",
+	"name" : "GraphFused",
 	"type" : "normal"
 }

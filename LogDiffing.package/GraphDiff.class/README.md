@@ -13,3 +13,5 @@ Methods:
 	- `linkLine: aLink`: create a line for the dotfile concerning a link
 - `links: aLink`: add `aLink` to the link array. 
 - `setUp: aFileV1 and: aFileV2` instanciate all needed variables.
+- `mainGraph`: returns the main graph of this object
+- `cleanCopy`: returns a new GraphDiff object that's a clean (deep) copy of this object

@@ -8,3 +8,4 @@ addNode: aNode
 	nextIndex := nextIndex + 1.
 	aNode terminal ifTrue: [ terminalNode := aNode. ].
 	aNode initial ifTrue: [ initialNode := aNode. ].
+	^ aNode index.

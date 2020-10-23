@@ -1,0 +1,3 @@
+accessing
+totalNodes
+	^ nodeContained size.

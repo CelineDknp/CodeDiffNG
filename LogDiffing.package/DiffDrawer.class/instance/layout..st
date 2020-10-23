@@ -1,5 +1,5 @@
 accessing
 layout: aValue
-	layout := RSTreeLayout new.
+	layout := RSHorizontalTreeLayout new.
 	layout verticalGap: verticalSpacing; 
 			 horizontalGap: horizontalSpacing.
