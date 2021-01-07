@@ -1,7 +1,7 @@
 crawl
 doAllDiffs
 	allDiffs do: [ :each |
-		each  createGraphDiff. 
+		each createGraphDiff. 
 		each postProcess.
 		each extractDiffToFile.
 	 ]

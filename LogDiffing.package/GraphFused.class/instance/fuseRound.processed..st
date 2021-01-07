@@ -5,10 +5,12 @@ fuseRound: aNode processed: nodesProcessed
 			(aNode isFused) ifTrue: [ "We are a fused node"
 				toFuse := aNode.
 				aNode links do: [ :link |
+					(link isNil) ifFalse:[
 					(self canFuse: (link to)) ifTrue:[
 						toFuse add: (link to) initial: (self getInitialEquivalent: link to).	
 						fused := true.
 						graph remove: (link to) ifAbsent:[].
+					].
 					].
 				].
 			] ifFalse: [ 

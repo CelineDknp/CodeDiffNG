@@ -1,6 +1,6 @@
 Class to crawl directories and create diffs (takes two directories in argument, and crawl them, matching potential files to diff)
 
-Constructor: DirectoryCrawler with: 'dirV1' and: 'dirV2'.
+Constructor: DirectoryCrawler with: 'dirV1' and: 'dirV2' db: aBoolean.
 
 Instance variables:
 	- dir1 & dir2

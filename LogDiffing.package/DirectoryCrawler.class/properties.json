@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "CelineDknp 10/5/2020 11:37",
+	"commentStamp" : "CelineDknp 10/30/2020 16:37",
 	"super" : "Object",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
@@ -8,6 +8,7 @@
 	"instvars" : [
 		"dir1",
 		"dir2",
+		"dbMode",
 		"allDirs",
 		"allDiffs"
 	],

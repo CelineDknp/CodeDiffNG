@@ -1,15 +1,15 @@
 {
-	"commentStamp" : "CelineDknp 1/7/2021 10:46",
+	"commentStamp" : "CelineDknp 1/7/2021 11:00",
 	"super" : "InputFile",
 	"category" : "LogDiffing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"allParts",
-		"totalLines",
-		"interestLines"
+		"baseName",
+		"tempFile",
+		"allParts"
 	],
-	"name" : "LogFile",
+	"name" : "DBFile",
 	"type" : "normal"
 }

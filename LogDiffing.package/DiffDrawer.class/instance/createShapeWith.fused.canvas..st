@@ -9,7 +9,7 @@ createShapeWith: aNode fused: allFused canvas: aCanvas
 				allFused at: result put: aNode.
 				result color: Color gray;
 				size: (40 + (aNode totalNodes*4)).
-				connection := RSPopupConnection new.
+				"connection := RSPopupConnection new.
 				connection inputCanvas: aCanvas.
 				connection output: [ :inputModel |
 					| builder |
@@ -17,8 +17,8 @@ createShapeWith: aNode fused: allFused canvas: aCanvas
 					self draw: aNode mainGraph on: builder. 
 					builder @ RSCanvasController.
 					builder open.
-				].
-				"inspectable := RSInspectable new.
+				]."
+				inspectable := RSInspectable new.
 				inspectable inspectShapeBlock: [ :input | 
 					| builder |
 					builder := RSCanvas new.
@@ -26,7 +26,7 @@ createShapeWith: aNode fused: allFused canvas: aCanvas
 					builder @ RSCanvasController.
 					builder open.
 				].
-				result @ inspectable."
+				result @ inspectable.
 			] ifFalse:[
 				|border|
 				border := RSBorder new.

@@ -9,5 +9,5 @@ with: str
 				[ ^ RuleStep new
 				originalText: str;
 				setUp. ]
-			ifFalse: [^ LogLine new
-					originalText:str ] ]
+			ifFalse: [^ RuleStep new
+					label:str. ] ]

@@ -1,6 +1,7 @@
 Object abstracting the pipeline to clean and create all files 
 
-Constructor: FileProcessor with: 'Filev1.log' and: 'Filev2.log'.
+Constructor: 	FileProcessor with: 'Filev1.log' and: 'Filev2.log'.
+					FileProcessor withDB: 'FileDB1.db3' and: 'FileDB2.db3'
 
 
 Instance variables:

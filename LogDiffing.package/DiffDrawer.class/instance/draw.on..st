@@ -14,18 +14,7 @@ draw: aGraph on: aCanvas
 		].
 		currentNodeShape.
 	] as: RSGroup.
-	layout on: allShapes.
-	allShapes pushFront.
-	allShapes removeAll: allFused keys.
-	allShapes @ RSLabeled.
-	allFused keys do: [ :shape | 
-		|label node|
-		node := allFused at: shape.
-		label := RSLabeled new text: [:notUsed  | node totalNodes. ].
-		label shapeBuilder labelShape fontSize: 20; color: Color white; bold.
-		label location middle; inner.	
-		shape @label.
-	].
-	self scootOver: graph with: nodeDrawned.
+	self pushLabels: allShapes fused: allFused.
+	self addLayoutSelector: aCanvas onShapes: allShapes withGraph: graph withDict: nodeDrawned.
 	aCanvas @ RSCanvasController.
 	^ aCanvas.

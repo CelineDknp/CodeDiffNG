@@ -1,12 +1,8 @@
-Object representing a log file. Will read the file and simplify/extract the important informations from the logs.
+Concrete representation of a log file (Inherits from InputFile). Will read the file and simplify/extract the important informations from the logs.
 
 Constructor: LogFile with: "aLogFile.txt"
 Local vars: 
-- sourceFile (String), 
-- totalLine (when `extractLog` was run, total lines in original file)
 - interestLines (when `extractLog` was run, total extraced lines)
-- allPart (when `multipleFileCreation` was run, contains a dict with all parts and their lines)
-- allLogs
 
 Methods:
 - `fileContent`: returns the String content of full `sourceFile` file

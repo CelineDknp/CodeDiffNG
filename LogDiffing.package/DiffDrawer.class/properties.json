@@ -10,7 +10,8 @@
 		"canvas",
 		"verticalSpacing",
 		"horizontalSpacing",
-		"layout"
+		"layout",
+		"legend"
 	],
 	"name" : "DiffDrawer",
 	"type" : "normal"

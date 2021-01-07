@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 versionNumber: aString 
 	versionNumber := aString
